@@ -17,6 +17,21 @@ WebService/
 
 ## Project setup
 
+### Install git
+[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Save your git credentials
+You need to do this to be able to push code to your own repository.  
+You should only use this on your own personal computer, not shared computers!  
+Email and password must match your GitHub login credentials.  
+```
+git config --global user.name "your username"
+git config --global user.email "example@gmail.com"
+git config --global user.password "secret"
+```
+
+You could also use [https://github.com/git-ecosystem/git-credential-manager](https://github.com/git-ecosystem/git-credential-manager)
+
 ### Install Python
 [https://www.python.org/downloads/](https://www.python.org/downloads/])
 
@@ -24,7 +39,6 @@ WebService/
 `python3 --version`
 
 ### Get the code from the GitHub repository
-
 Create a github repository, for example:  
 github.com/username/my-web-service-client  
   
@@ -74,6 +88,12 @@ or
 ```
 python -m pip install -r requirements.txt
 ```
+
+# .gitignore file
+Add your environment folder, and "/app/__pycache__/" to the .gitignore file.  
+The contents of .gitignore could look like this:  
+/environment_name
+/app/__pycache__/
 
 ### Start the app
 ```
